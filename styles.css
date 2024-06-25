@@ -1,3 +1,4 @@
+<style>
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -31,6 +32,10 @@ header h1 {
     float: left;
     font-size: 1.8rem;
     transition: color 0.3s ease-in-out;
+}
+
+header h1:hover {
+    color: #e28282;
 }
 
 header nav {
@@ -88,6 +93,7 @@ header:after {
     margin-bottom: 1rem;
     position: relative;
     z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #hero p {
@@ -95,6 +101,7 @@ header:after {
     margin-bottom: 2rem;
     position: relative;
     z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #hero .btn {
@@ -106,11 +113,12 @@ header:after {
     border-radius: 5px;
     position: relative;
     z-index: 2;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #hero .btn:hover {
     background: #ff6347;
+    transform: scale(1.1);
 }
 
 /* Section: About */
@@ -118,6 +126,11 @@ header:after {
     padding: 2rem 0;
     background: #1e1e1e;
     text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+#about:hover {
+    background: #333;
 }
 
 #about h2 {
@@ -128,35 +141,18 @@ header:after {
 
 #about p {
     line-height: 1.8;
+    transition: color 0.3s ease-in-out;
+}
+
+#about p:hover {
+    color: #e28282;
 }
 
 /* Section: Projects */
 #projects {
     padding: 2rem 0;
-}
-
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.project {
     background: #252525;
-    padding: 1rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-    flex: 1 1 calc(33.333% - 1rem);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
 }
 
-.project:hover {
-    transform: translateY(-10px);
-}
-
-.project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+#projects h2 {
     color: #
