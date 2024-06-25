@@ -1,9 +1,3 @@
-<style>
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -144,7 +138,7 @@ header:after {
 }
 
 .project {
-    background: #252525;
+    background: #252525; /* dark gray */
     padding: 1rem;
     border: 1px solid #333;
     border-radius: 5px;
@@ -160,4 +154,12 @@ header:after {
 .project h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #
+    color: #6c757d; /* dark gray */
+}
+
+.project p {
+    color: #ccc; /* light gray */
+    line-height: 1.6;
+}
+
+/* Add more dark colors as needed */
